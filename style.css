@@ -17,6 +17,11 @@
     cursor: pointer;
 }
 
+.text-light-gray {
+    color: #727272;
+}
+
+
 /* Header Style */
 
 header {
@@ -75,45 +80,14 @@ nav li a {
     line-height: normal;
 }
 
-.banner-description {
-    color: #727272;
-}
 
-/* Responsive media query */
 
-/* mobile device */
-@media screen and (max-width: 567px) {
-    
-    header {
-        padding: 20px;
-      
-    }
-
-    nav{
-        flex-direction: column;
-    }
-}
-
-/* tablat devices */
-
-@media  screen and (min-width: 576px) and (max-width:960px) {
-    
-    header {
-        padding: 50px;
-      
-    }
-
-    nav{
-        flex-direction: column;
-    }
-
-}
 
 /* Main style */
 
 main{
     max-width: 1440px;
-    margin: 0px auto;
+    margin: 70px auto;
 }
 
 
@@ -146,5 +120,56 @@ main{
 .team-title .text-features {
     color: #FF900E;
     font-weight: 700;
+
+}
+
+
+
+
+
+
+
+
+/* Responsive media query */
+
+/* mobile device */
+@media screen and (max-width: 567px) {
+    
+    header {
+        padding: 20px;
+      
+    }
+
+    nav,
+    .teams-container{
+
+        flex-direction: column;
+    }
+
+    
+        .team-content {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+ 
+}
+
+/* tablat devices */
+
+@media  screen and (min-width: 576px) and (max-width:960px) {
+    
+    header {
+        padding: 50px;
+      
+    }
+
+    nav,
+    .teams-container{
+        flex-direction: column;
+    }
 
 }
