@@ -21,7 +21,11 @@
     color: #727272;
 }
 
-
+.section-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
 /* Header Style */
 
 header {
@@ -36,11 +40,7 @@ nav {
     align-items: center;
 }
 
-.nav-title {
-    color: #131313;
-    font-weight: 700;
-    font-size: 1.8rem;
-}
+
 
 nav>ul {
     display: flex;
@@ -124,10 +124,30 @@ main{
 }
 
 
+/* Facts styles */
 
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
 
+.facts-card-container .card{
+    border-radius: 8px;
+border: 1px solid #FF900E;
+text-align: center;
+padding: 15px 30px;
+}
 
+.facts-card-container .card-title{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 5px;
+}
 
+.facts-card-container .card-stats{
+   color: #424242;
+   font-size: 2rem;
+}
 
 
 /* Responsive media query */
@@ -141,22 +161,31 @@ main{
     }
 
     nav,
-    .teams-container{
+    .teams-container,
+    .facts-card-container{
 
         flex-direction: column;
     }
 
     
-        .team-content {
+        .team-content, .facts-card-container {
             padding-left: 20px;
             padding-right: 20px;
         }
 
+
     .teams-img-container {
         grid-template-columns: 1fr;
     }
- 
+
+
+    .facts-card-container{
+        gap: 20px;
+    }
 }
+
+
+
 
 /* tablat devices */
 
